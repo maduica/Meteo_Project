@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="401.0" prefWidth="600.0">
+         <children>
+            <ComboBox fx:id="countryComboB" layoutX="69.0" layoutY="60.0" onAction="#choosenCo" onMouseClicked="#selectCo" prefWidth="150.0" promptText="Country" />
+            <ComboBox fx:id="cityComB" layoutX="403.0" layoutY="60.0" onAction="#choosenCi" onMouseClicked="#selectCi" prefWidth="150.0" promptText="City" />
+            <Button layoutX="219.0" layoutY="337.0" mnemonicParsing="false" onMouseClicked="#findDatas" text="Find" />
+            <Label layoutX="69.0" layoutY="131.0" prefHeight="32.0" prefWidth="143.0" text="ORAS" />
+            <Label layoutX="69.0" layoutY="176.0" prefHeight="25.0" prefWidth="143.0" text="ZI" />
+            <Label layoutX="69.0" layoutY="218.0" prefHeight="25.0" prefWidth="143.0" text="Rezultat" />
+            <Label layoutX="415.0" layoutY="131.0" prefHeight="32.0" prefWidth="126.0" text="umidit" />
+            <Label layoutX="415.0" layoutY="188.0" prefHeight="25.0" prefWidth="126.0" text="vant" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="370.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true" />
+         </children></Pane>
+   </children>
+</AnchorPane>
