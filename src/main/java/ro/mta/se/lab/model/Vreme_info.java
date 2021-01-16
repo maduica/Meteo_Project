@@ -5,6 +5,7 @@ import javafx.collections.ObservableList;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.Collections;
 import java.util.Scanner;
 import java.util.Vector;
 
@@ -25,7 +26,6 @@ public class Vreme_info {
         String[] parts = fileContent.split("\n");
         this.countries_ = new Vector<String>(parts.length - 1);
         MyUtils util=new MyUtils();
-        //obtinerea locatiilor
         for (int i = 0; i < parts.length; i++) {
             if (i > 0) {
                 String[] littleparts = parts[i].split(" +");
@@ -36,7 +36,9 @@ public class Vreme_info {
                 }
             }
         }
-      //  System.out.println(this.locations_.size()+" "+this.countries_.size());
+
+        //ordonarea alfabetica a tarilor
+        Collections.sort(this.countries_);
     }
 
     public ObservableList<Location> getLocations_() {
