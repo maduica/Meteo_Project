@@ -73,9 +73,9 @@ public class Vreme_Controller {
             //this.action_.setText(w.getAction_());
             this.temp_min_.setText("Minim: "+w.getMinTemp_()+"\u00B0"+"C");
             this.temp_max_.setText("Maxim: "+w.getMaxTemp_()+"\u00B0"+"C");
-            this.pressure_.setText("Pressure: "+w.getPressure_());
+            this.pressure_.setText("Pressure: "+w.getPressure_()+"atm");
             this.date_.setText(util.returnCurrentDate_());
-            this.wind_.setText("Wind: "+w.getWind_speed()+"mph");
+            this.wind_.setText("Wind: "+w.getWind_speed()+"m/s");
 
             util.markToFile(util.returnCurrentDate_(),this.choosen_Country_,this.choosen_City_,w.getAction_(),w.getWind_speed(),w.getPressure_(),w.getTemperature_());
             Image img;

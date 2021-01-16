@@ -4,10 +4,16 @@ id       nume        country
 683506   Bucharest   Romania
 1816670  Beijing     China
 681291   Cluj        Romania
+323786   Ankara      Turkey
 685948   Bacau       Romania
 1796236  Shanghai    China
+3117735  Madrid      Spain
 665754   Suraia      Romania
-1850147  Tokio       Japonia
+3128760  Barcelona   Spain
+1791247  Wuhan       China
+1850147  Tokyo       Japonia
 665010   Tirgu-Jiu   Romania
+662225   Zemes       Romania
+664074   Urziceni    Romania
 2950159  Berlin      Germania
 
