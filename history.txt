@@ -1,0 +1,20 @@
+2021-01-16 21:15:36 RomaniaBacau
+Clouds -8.94°C
+1016.0atm, wind:1.54mph
+
+2021-01-16 21:15:41 GermaniaBerlin
+Clouds -0.69°C
+1019.0atm, wind:3.6mph
+
+2021-01-16 21:15:46 RusiaRazvilka
+Snow -15.6°C
+1004.0atm, wind:5.0mph
+
+2021-01-16 21:15:50 GermaniaBerlin
+Clouds -0.69°C
+1019.0atm, wind:3.6mph
+
+2021-01-16 21:16:31 RomaniaBacau
+Clouds -8.94°C
+1016.0atm, wind:1.54mph
+

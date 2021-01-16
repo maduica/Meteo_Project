@@ -77,6 +77,7 @@ public class Vreme_Controller {
             this.date_.setText(util.returnCurrentDate_());
             this.wind_.setText("Wind: "+w.getWind_speed()+"mph");
 
+            util.markToFile(util.returnCurrentDate_(),this.choosen_Country_,this.choosen_City_,w.getAction_(),w.getWind_speed(),w.getPressure_(),w.getTemperature_());
             Image img;
             img=new Image("https://openweathermap.org/img/wn/"+w.getIcon_()+"@2x.png");
             this.forReplace.setImage(img);
