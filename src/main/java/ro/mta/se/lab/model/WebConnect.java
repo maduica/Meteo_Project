@@ -21,7 +21,6 @@ public class WebConnect {
         this.city_=cityName;
         this.country_=countryName;
         this.apiKey_="3590e4d2ca45a176e6f39f2a679977f9";
-//api.openweathermap.org/data/2.5/weather?id={city id}&appid={API key}
 
     }
 

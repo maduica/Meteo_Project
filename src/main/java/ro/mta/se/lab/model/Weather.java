@@ -7,16 +7,16 @@ public class Weather {
     String maxTemp_;
     String minTemp_;
     String action_;
-    String feels_like_;
+    String icon_;
 
-    public Weather(String temperature, String wind_speed, String pressure_, String maxTemp_, String minTemp_, String action_, String feels_like_) {
+    public Weather(String temperature, String wind_speed, String pressure_, String maxTemp_, String minTemp_, String action_,String iconCode) {
         this.temperature_ = temperature;
         this.wind_speed = wind_speed;
         this.pressure_ = pressure_;
         this.maxTemp_ = maxTemp_;
         this.minTemp_ = minTemp_;
+        this.icon_=iconCode;
         this.action_ = action_;
-        this.feels_like_ = feels_like_;
     }
 
     public String getTemperature_() {
@@ -35,16 +35,15 @@ public class Weather {
         return maxTemp_;
     }
 
+    public String getIcon_() {
+        return this.icon_;
+    }
     public String getMinTemp_() {
         return minTemp_;
     }
 
     public String getAction_() {
         return action_;
-    }
-
-    public String getFeels_like_() {
-        return feels_like_;
     }
 
 

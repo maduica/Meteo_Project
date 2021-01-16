@@ -8,5 +8,6 @@ id       nume        country
 1796236  Shanghai    China
 665754   Suraia      Romania
 1850147  Tokio       Japonia
+665010   Tirgu-Jiu   Romania
 2950159  Berlin      Germania
 

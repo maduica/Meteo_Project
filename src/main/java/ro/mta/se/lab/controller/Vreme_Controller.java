@@ -4,11 +4,18 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.ComboBox;
-import ro.mta.se.lab.model.Location;
-import ro.mta.se.lab.model.WebConnect;
+import javafx.scene.control.Label;
+import ro.mta.se.lab.model.*;
+
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+
+import java.awt.image.BufferedImage;
 
 import java.io.IOException;
 import java.util.Vector;
+
+import static javax.print.attribute.standard.ReferenceUriSchemesSupported.FILE;
 
 public class Vreme_Controller {
     private ObservableList<Location> locations_;
@@ -19,11 +26,25 @@ public class Vreme_Controller {
     private String id_;
 
     @FXML
+    private ImageView forReplace;
+    @FXML
     private ComboBox<String> countryComboB;
-
     @FXML
     private ComboBox<String>cityComB;
-
+    @FXML
+    private Label temp_;
+    @FXML
+    private Label temp_min_;
+    @FXML
+    private Label temp_max_;
+    @FXML
+    private Label wind_;
+    @FXML
+    private Label pressure_;
+    @FXML
+    private Label action_;
+    @FXML
+    private Label date_;
 
     public Vreme_Controller(ObservableList<Location> loc, Vector<String> co) {
         this.locations_ = loc;
@@ -32,22 +53,36 @@ public class Vreme_Controller {
 
     @FXML
     public void findDatas() throws IOException {
-        if(this.choosen_Country_!=null && this.choosen_City_!=null)
-        {
-            for(int i=0;i<this.locations_.size();i++)
-            {
-                if(this.locations_.get(i).getLocationCountry_().equals(this.choosen_Country_) &&
-                    this.locations_.get(i).getLocation_Name_().equals(this.choosen_City_))
-                {
-                    this.id_=this.locations_.get(i).getId_();
+        if (this.choosen_Country_ != null && this.choosen_City_ != null) {
+            for (int i = 0; i < this.locations_.size(); i++) {
+                if (this.locations_.get(i).getLocationCountry_().equals(this.choosen_Country_) &&
+                        this.locations_.get(i).getLocation_Name_().equals(this.choosen_City_)) {
+                    this.id_ = this.locations_.get(i).getId_();
                 }
             }
 
-            WebConnect webRequest_=new WebConnect(this.choosen_City_,this.choosen_Country_,this.id_);
-            System.out.println(webRequest_.getMyjsonFile_());
+            WebConnect webRequest_ = new WebConnect(this.choosen_City_, this.choosen_Country_, this.id_);
+            JsonAnalyzer jsonService = new JsonAnalyzer(webRequest_.getMyjsonFile_());
+
+            MyUtils util = new MyUtils();
+            Weather w = new Weather(jsonService.get_TEMP_(), jsonService.getWindSpeed_(), jsonService.pressure(), jsonService.get_max_TEMP_(),
+                    jsonService.get_min_TEMP_(), jsonService.get_Action(),jsonService.get_icon());
+
+            this.temp_.setText("Now: "+w.getTemperature_()+"\u00B0"+"C");
+            this.wind_.setText(w.getWind_speed());
+            //this.action_.setText(w.getAction_());
+            this.temp_min_.setText("Minim: "+w.getMinTemp_()+"\u00B0"+"C");
+            this.temp_max_.setText("Maxim: "+w.getMaxTemp_()+"\u00B0"+"C");
+            this.pressure_.setText("Pressure: "+w.getPressure_());
+            this.date_.setText(util.returnCurrentDate_());
+            this.wind_.setText("Wind: "+w.getWind_speed()+"mph");
+
+            Image img;
+            img=new Image("https://openweathermap.org/img/wn/"+w.getIcon_()+"@2x.png");
+            this.forReplace.setImage(img);
+
         }
     }
-
     @FXML
     private void selectCo()
     {

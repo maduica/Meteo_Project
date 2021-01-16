@@ -34,7 +34,14 @@ public class JsonAnalyzer {
         JSONArray wea=(JSONArray)obj.get("weather");
         JSONObject wea1=(JSONObject)wea.get(0);
         return (String)wea1.get("main");
-        //return  obj.getJSONObject("weather").get(0).ge;
+    }
+
+    public String get_icon(){
+
+        JSONObject obj=new JSONObject(this.jsonFile_);
+        JSONArray wea=(JSONArray)obj.get("weather");
+        JSONObject wea1=(JSONObject)wea.get(0);
+        return (String)wea1.get("icon");
     }
 
     public String getWindSpeed_()

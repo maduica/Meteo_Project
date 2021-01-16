@@ -8,15 +8,20 @@
    <children>
       <Pane prefHeight="401.0" prefWidth="600.0">
          <children>
-            <ComboBox fx:id="countryComboB" layoutX="69.0" layoutY="60.0" onAction="#choosenCo" onMouseClicked="#selectCo" prefWidth="150.0" promptText="Country" />
-            <ComboBox fx:id="cityComB" layoutX="403.0" layoutY="60.0" onAction="#choosenCi" onMouseClicked="#selectCi" prefWidth="150.0" promptText="City" />
-            <Button layoutX="219.0" layoutY="337.0" mnemonicParsing="false" onMouseClicked="#findDatas" text="Find" />
-            <Label layoutX="69.0" layoutY="131.0" prefHeight="32.0" prefWidth="143.0" text="ORAS" />
-            <Label layoutX="69.0" layoutY="176.0" prefHeight="25.0" prefWidth="143.0" text="ZI" />
-            <Label layoutX="69.0" layoutY="218.0" prefHeight="25.0" prefWidth="143.0" text="Rezultat" />
-            <Label layoutX="415.0" layoutY="131.0" prefHeight="32.0" prefWidth="126.0" text="umidit" />
-            <Label layoutX="415.0" layoutY="188.0" prefHeight="25.0" prefWidth="126.0" text="vant" />
-            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="370.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true" />
+            <ComboBox fx:id="countryComboB" layoutX="66.0" layoutY="28.0" onAction="#choosenCo" onMouseClicked="#selectCo" prefWidth="150.0" promptText="Country" />
+            <ComboBox fx:id="cityComB" layoutX="403.0" layoutY="28.0" onAction="#choosenCi" onMouseClicked="#selectCi" prefWidth="150.0" promptText="City" />
+            <Button layoutX="281.0" layoutY="339.0" mnemonicParsing="false" onMouseClicked="#findDatas" text="Find" />
+            <Label fx:id="temp_" layoutX="64.0" layoutY="80.0" prefHeight="32.0" prefWidth="143.0" text="Temperature" />
+            <Label fx:id="date_" layoutX="64.0" layoutY="125.0" prefHeight="25.0" prefWidth="143.0" text="Data" />
+            <Label fx:id="temp_max_" layoutX="403.0" layoutY="80.0" prefHeight="32.0" prefWidth="126.0" text="Maxim: " />
+            <Label fx:id="temp_min_" layoutX="403.0" layoutY="125.0" prefHeight="25.0" prefWidth="126.0" text="Minim: " />
+            <ImageView fx:id="logo" fitHeight="158.0" fitWidth="225.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../app_logo.jpg" />
+               </image></ImageView>
+            <ImageView fx:id="forReplace" fitHeight="169.0" fitWidth="250.0" layoutX="347.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="pressure_" layoutX="406.0" layoutY="168.0" prefHeight="25.0" prefWidth="135.0" text="Pressure" />
+            <Label fx:id="wind_" layoutX="61.0" layoutY="156.0" prefHeight="25.0" prefWidth="150.0" text="Wind" />
          </children></Pane>
    </children>
 </AnchorPane>
