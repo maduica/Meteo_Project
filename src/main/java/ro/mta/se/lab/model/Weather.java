@@ -1,5 +1,9 @@
 package ro.mta.se.lab.model;
 
+/**
+ * @author Duica Marius
+ * Obiectul Weather curpinde toate elementele afisate despre vremea din localitatea ceruta.
+ */
 public class Weather {
     String temperature_;
     String wind_speed;

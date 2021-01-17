@@ -30,7 +30,6 @@ public class JsonAnalyzerTest {
     @Test
     public void get_TEMP_() {
         assertEquals(this.jsonObject_forTest_.get_TEMP_(),"282.54");
-
     }
 
     @Test

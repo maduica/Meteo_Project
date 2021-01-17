@@ -18,6 +18,9 @@ public class MyUtils {
     {
 
     }
+
+
+    //verificarea existentei unui String intr-un vector de stringuri
     public int checkExist_(Vector<String> words, String forSearch) {
 
         int ok = 0;
@@ -29,11 +32,13 @@ public class MyUtils {
         }
         return ok;
     }
+    //reurnarea datei curente
     public String returnCurrentDate_()
     {
         return new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(Calendar.getInstance().getTime());
     }
 
+    //functie specifica pentru scrierea datelor sub forma unui istoric intr-un fisier
     public void markToFile(String date,String country,String city ,String action,String wind,String pressure,String temperature) throws IOException {
         FileWriter f=new FileWriter("history.txt",true);
         PrintWriter printer_=new PrintWriter(f);

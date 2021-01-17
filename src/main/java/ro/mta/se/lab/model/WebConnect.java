@@ -12,8 +12,6 @@ import java.net.URLConnection;
  * apiKey_ este cheia de la contul propriu, in timp ce locID_ este identificatorul localitatii
  */
 public class WebConnect {
-    String city_;
-    String country_;
     String locID_;
     String apiKey_;
 
@@ -21,7 +19,6 @@ public class WebConnect {
     {
         this.locID_=id;
         this.apiKey_="3590e4d2ca45a176e6f39f2a679977f9";
-
     }
 
     public String getMyjsonFile_() throws IOException {
@@ -44,5 +41,4 @@ public class WebConnect {
 
         return myjsonFile_;
     }
-
 }

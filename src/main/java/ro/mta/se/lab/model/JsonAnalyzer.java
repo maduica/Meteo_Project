@@ -4,6 +4,13 @@ package ro.mta.se.lab.model;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+/**
+ * @author Duica Marius
+ * Clasa cu care vom parsa stringul jsonFile_ obtinut in urma interoarii serverului.
+ * Aceasta clasa este alcatuita exclusiv din functii de get prin care obtinem datele necesare pentru
+ * afisarea in GUI.
+ */
+
 public class JsonAnalyzer {
     String jsonFile_;
 
