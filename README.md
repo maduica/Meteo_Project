@@ -14,6 +14,7 @@ Datele care vor fi afisate sunt urmatoarele:
 - Viteza vantului
 - Presiunea atmosferica
 - Data curenta
+- O poza in functie de starea vremii
 
 
 ## Limbaj utilizat
