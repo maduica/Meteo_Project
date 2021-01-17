@@ -23,6 +23,7 @@ public class Main extends Application {
     public void start(Stage primaryStage)  {
         FXMLLoader loader = new FXMLLoader();
         try {
+            //vinfo_ se va ocupa de initializarea tarilor si a localitatilor
             Vreme_info vinfo_=new Vreme_info("src/main/resources/inputFile.txt");
             loader.setLocation(this.getClass().getResource("/view/ViewVreme.fxml"));
             locations_=vinfo_.getLocations_();
