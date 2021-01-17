@@ -2,12 +2,16 @@ package ro.mta.se.lab.model;
 
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.PrintStream;
 import java.io.PrintWriter;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Vector;
 
+/**
+ * @author Duica Marius
+ * aceasta clasa reprezinta un set de instrumente(functii ce sunt
+ * predispuse la a fi folosite de mai multe ori pe parcursul programului)
+ */
 public class MyUtils {
 
     public MyUtils()

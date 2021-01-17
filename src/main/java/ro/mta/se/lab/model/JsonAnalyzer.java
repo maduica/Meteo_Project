@@ -10,7 +10,6 @@ public class JsonAnalyzer {
     public JsonAnalyzer(String j)
     {
         this.jsonFile_=j;
-       // System.out.println(this.jsonFile_);
     }
 
     public String get_TEMP_(){

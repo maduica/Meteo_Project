@@ -50,3 +50,19 @@ Clouds 5.74°C
 Clouds -1.07°C
 1019.0atm, wind:3.6mph
 
+2021-01-17 10:03:44 RomaniaSuraia
+Clouds -6.76°C
+1018.0atm, wind:1.77mph
+
+2021-01-17 10:04:04 RomaniaTirgu-Jiu
+Clouds -4.96°C
+1018.0atm, wind:0.54mph
+
+2021-01-17 11:31:34 SpainBarcelona
+Clear 8.68°C
+1023.0atm, wind:4.63mph
+
+2021-01-17 11:31:39 SpainBarcelona
+Clear 8.68°C
+1023.0atm, wind:4.63mph
+

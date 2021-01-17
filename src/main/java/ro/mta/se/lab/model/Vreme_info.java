@@ -9,6 +9,11 @@ import java.util.Collections;
 import java.util.Scanner;
 import java.util.Vector;
 
+/**
+ * @author Duica Marius
+ * cu ajutorul acestei clase obtinem atat localitatile cat si tarile
+ * pe care le putem obtine cu ajutorul functiilor specifice de get
+ */
 public class Vreme_info {
     private ObservableList<Location> locations_ = FXCollections.observableArrayList();
     private Vector<String> countries_;
