@@ -5,7 +5,19 @@ Alegand prima data tara, dupa care localitatea, id-ul cu ajutorul caruia vom obt
 pe care o obtinem facandu-ne un cont pe https://openweathermap.org/ , vom primi inapoi un fisier json, din care ne vom culege datele pe care va urma sa le afisam intr-un mod
 mai prietenos in GUI (Graphical user interface).
 
-## Utilizare
-- Unordered sub-list.
+## Utilizare aplicatie
+Vom selecta tara, apoi orasul ale carui date meteorologice vrem sa le aflam, ca mai apoi vsa apasam butonul Find pentru ca datele sa fie afisate. 
+Datele care vor fi afisate sunt urmatoarele:
+- Temperatura
+- Temperatura maxima
+- Temperatura minima
+- Viteza vantului
+- Presiunea atmosferica
+- Data curenta
+
+
+## Limbaj utilizat
+- Java
+
 ## Realizator
 Duică Marius-Gabriel
