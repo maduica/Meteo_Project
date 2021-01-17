@@ -7,6 +7,7 @@ mai prietenos in GUI (Graphical user interface).
 
 ## Utilizare
 
-⋅⋅* Numele localitatii si tara din care face pare
+2. Another item
+⋅⋅* Unordered sub-list.
 ## Realizator
 Duică Marius-Gabriel
