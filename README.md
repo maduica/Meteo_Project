@@ -7,6 +7,6 @@ mai prietenos in GUI (Graphical user interface).
 
 ## Utilizare
 
-⋅⋅*Numele localitatii si tara din care face pare
+⋅⋅* Numele localitatii si tara din care face pare
 ## Realizator
 Duică Marius-Gabriel
