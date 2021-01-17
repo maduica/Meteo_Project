@@ -6,8 +6,6 @@ pe care o obtinem facandu-ne un cont pe https://openweathermap.org/ , vom primi 
 mai prietenos in GUI (Graphical user interface).
 
 ## Utilizare
-
-2. Another item
-⋅⋅* Unordered sub-list.
+- Unordered sub-list.
 ## Realizator
 Duică Marius-Gabriel
