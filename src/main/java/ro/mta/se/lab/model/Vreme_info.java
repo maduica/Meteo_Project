@@ -46,6 +46,7 @@ public class Vreme_info {
         Collections.sort(this.countries_);
     }
 
+    //functii de get pentru tari si orase
     public ObservableList<Location> getLocations_() {
         return locations_;
     }

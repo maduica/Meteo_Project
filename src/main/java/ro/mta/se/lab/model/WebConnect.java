@@ -1,25 +1,25 @@
 package ro.mta.se.lab.model;
 
-import com.sun.source.tree.WhileLoopTree;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 
+/**
+ * WebConnect este clasa prin intermediul careia interogam serverul pe baza id-ului si obtinem
+ * fisierul json corespunzator localitatii.
+ * apiKey_ este cheia de la contul propriu, in timp ce locID_ este identificatorul localitatii
+ */
 public class WebConnect {
     String city_;
     String country_;
     String locID_;
     String apiKey_;
 
-    public WebConnect(String cityName, String countryName,String id)
+    public WebConnect(String id)
     {
         this.locID_=id;
-        this.city_=cityName;
-        this.country_=countryName;
         this.apiKey_="3590e4d2ca45a176e6f39f2a679977f9";
 
     }

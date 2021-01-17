@@ -1,5 +1,11 @@
 package ro.mta.se.lab.model;
 
+
+/**
+ * aceasta clasa este creata pentru a ne usura lucrul cu localitatile
+ * location_Name_ reprezinta numele localitatii, locationC_ numele tarii de care apartine
+ * iar id_ este identificatorul specificc localitatii
+ */
 public class Location {
     private String id_;
     private String location_Name_;

@@ -9,18 +9,27 @@ import ro.mta.se.lab.model.*;
 
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-
-import java.awt.image.BufferedImage;
-
 import java.io.IOException;
 import java.util.Vector;
 
-import static javax.print.attribute.standard.ReferenceUriSchemesSupported.FILE;
+/**
+ * @author Duica Marius
+ * Clasa aceasta formeaza legatura dintre model si view (controller pentru
+ * modelul MVC)
+ */
 
 public class Vreme_Controller {
+    /**
+     * Membrii clasei Vreme_Controller:
+     * ->countries_ reprezinta lista de tari ce vor fi afisate
+     * ->locations_ reprezinta lista de orase ce vor fi afisate
+     * -> choosen_Country_ reprezinta tara aleasa de catre utilizator
+     * ->choosen_City_ reprezinta orasul ales de catre utilizator
+     * ->id_ rerezinta id-ul obtinut in urma alegerii localitatii
+     * ->labelurile vor afisa datele extrase in urma interogarii serverului
+     */
     private ObservableList<Location> locations_;
     private ObservableList<String> countries_= FXCollections.observableArrayList();
-
     private String choosen_Country_;
     private String choosen_City_;
     private String id_;
@@ -61,16 +70,16 @@ public class Vreme_Controller {
                 }
             }
 
-            WebConnect webRequest_ = new WebConnect(this.choosen_City_, this.choosen_Country_, this.id_);
+            WebConnect webRequest_ = new WebConnect( this.id_);
             JsonAnalyzer jsonService = new JsonAnalyzer(webRequest_.getMyjsonFile_());
 
             MyUtils util = new MyUtils();
+            //crearea unui obiect Weather
             Weather w = new Weather(jsonService.get_TEMP_(), jsonService.getWindSpeed_(), jsonService.pressure(), jsonService.get_max_TEMP_(),
                     jsonService.get_min_TEMP_(), jsonService.get_Action(),jsonService.get_icon());
 
             this.temp_.setText("Now: "+w.getTemperature_()+"\u00B0"+"C");
             this.wind_.setText(w.getWind_speed());
-            //this.action_.setText(w.getAction_());
             this.temp_min_.setText("Minim: "+w.getMinTemp_()+"\u00B0"+"C");
             this.temp_max_.setText("Maxim: "+w.getMaxTemp_()+"\u00B0"+"C");
             this.pressure_.setText("Pressure: "+w.getPressure_()+"atm");
@@ -84,6 +93,9 @@ public class Vreme_Controller {
 
         }
     }
+
+
+    //afisarea tarilor in interfata grafica
     @FXML
     private void selectCo()
     {
@@ -94,12 +106,14 @@ public class Vreme_Controller {
        }
     }
 
+
     @FXML
     private void choosenCo()
     {
         this.choosen_Country_=this.countryComboB.getValue();
     }
 
+    //afisarea localitatilor in interfata grafica
     @FXML
     private void selectCi()
     {

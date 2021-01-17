@@ -66,3 +66,39 @@ Clear 8.68°C
 Clear 8.68°C
 1023.0atm, wind:4.63mph
 
+2021-01-17 12:15:39 GermaniaBerlin
+Clouds -0.72°C
+1019.0atm, wind:1.03mph
+
+2021-01-17 16:34:48 GermaniaBerlin
+Clouds 0.22°C
+1020.0atm, wind:0.51mph
+
+2021-01-17 16:35:02 TurkeyAnkara
+Snow -0.28°C
+1005.0atm, wind:5.66mph
+
+2021-01-17 16:39:44 JaponiaTokyo
+Clouds 4.49°C
+1015.0atm, wind:4.12mph
+
+2021-01-17 16:47:30 SpainBarcelona
+Clear 14.54°C
+1020.0atm, wind:2.57mph
+
+2021-01-17 16:47:35 SpainMadrid
+Clear 7.43°C
+1028.0atm, wind:0.51mph
+
+2021-01-17 16:50:05 GermaniaBerlin
+Clouds -0.1°C
+1020.0atm, wind:1.54mph
+
+2021-01-17 16:50:10 SpainBerlin
+Clouds -0.1°C
+1020.0atm, wind:1.54mph
+
+2021-01-17 16:50:14 SpainMadrid
+Clear 7.43°C
+1028.0atm, wind:0.51mph
+
